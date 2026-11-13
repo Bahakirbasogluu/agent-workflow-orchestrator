@@ -1,5 +1,7 @@
 # caseflow
 
+[![CI](https://github.com/Bahakirbasogluu/agent-workflow-orchestrator/actions/workflows/ci.yml/badge.svg)](https://github.com/Bahakirbasogluu/agent-workflow-orchestrator/actions/workflows/ci.yml)
+
 A small engine for multi-agent workflows that people have to sign off. Workflows are documents: they are drafted, validated, published as immutable revisions and compiled into a [LangGraph](https://github.com/langchain-ai/langgraph) graph. Agents exchange results through typed ports, a run stops for human review and resumes from its checkpoint, and every run pins the exact versions it started on.
 
 The design comes from a credit risk platform I built for a bank and later generalised into a sector-neutral case-agent platform. The code here is written from scratch around an invented credit review; it contains no client code or data.
